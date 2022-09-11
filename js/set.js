@@ -1117,7 +1117,7 @@ $(document).ready(function () {
     $(".wallpaper_save").click(function () {
         var url = $("#wallpaper-url").val();
 //         var reg = /^http(s)?:\/\/(([\w-]+\.)+[\w-]|localhost)+(:[0-9]{1,5})?(\/[\w- ./?%&=]*)?$/g;
-        var reg = .*;
+        var reg = reg.test(url);
         if (!reg.test(url)) {
             iziToast.show({
                 message: '请输入正确的链接',
