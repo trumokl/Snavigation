@@ -1116,22 +1116,28 @@ $(document).ready(function () {
     // 自定义壁纸设置保存
     $(".wallpaper_save").click(function () {
         var url = $("#wallpaper-url").val();
-//         var reg = /^http(s)?:\/\/(([\w-]+\.)+[\w-]|localhost)+(:[0-9]{1,5})?(\/[\w- ./?%&=]*)?$/g;
-        var reg = reg.test(url);
-        if (!reg.test(url)) {
-            iziToast.show({
-                message: '请输入正确的链接',
-            });
-        } else {
-            var bg_img = getBgImg();
+        var bg_img = getBgImg();
             bg_img["type"] = "5";
             bg_img["path"] = url;
             setBgImg(bg_img);
             iziToast.show({
                 message: '自定义壁纸设置成功，刷新生效',
             });
-        }
-    });
+//         var reg = /^http(s)?:\/\/(([\w-]+\.)+[\w-]|localhost)+(:[0-9]{1,5})?(\/[\w- ./?%&=]*)?$/g;
+//         if (!reg.test(url)) {
+//             iziToast.show({
+//                 message: '请输入正确的链接',
+//             });
+//         } else {
+//             var bg_img = getBgImg();
+//             bg_img["type"] = "5";
+//             bg_img["path"] = url;
+//             setBgImg(bg_img);
+//             iziToast.show({
+//                 message: '自定义壁纸设置成功，刷新生效',
+//             });
+//         }
+//     });
 
     // 我的数据导出
     $("#my_data_out").click(function () {
