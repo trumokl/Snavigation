@@ -231,7 +231,8 @@ function setBgImgInit() {
 //             pictures[8] = './img/background9.webp';
 //             pictures[9] = './img/background10.webp';
             pictures[1] = './img/1.jpg';
-            var rd = Math.floor(Math.random() * 10);
+//             var rd = Math.floor(Math.random() * 10);
+            var rd = Math.floor(Math.random() );
             $('#bg').attr('src', pictures[rd]) //随机默认壁纸
             break;
         case "2":
