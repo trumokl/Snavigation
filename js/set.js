@@ -220,18 +220,16 @@ function setBgImgInit() {
     switch (bg_img["type"]) {
         case "1":
             var pictures = new Array();
-//             pictures[0] = './img/background1.webp';
-//             pictures[1] = './img/background2.webp';
-//             pictures[2] = './img/background3.webp';
-//             pictures[3] = './img/background4.webp';
-//             pictures[4] = './img/background5.webp';
-//             pictures[5] = './img/background6.webp';
-//             pictures[6] = './img/background7.webp';
-//             pictures[7] = './img/background8.webp';
-//             pictures[8] = './img/background9.webp';
-//             pictures[9] = './img/background10.webp';
-            pictures[1] = './img/1.jpg';
-//             var rd = Math.floor(Math.random() * 10);
+            pictures[0] = './img/background1.webp';
+            pictures[1] = './img/background2.webp';
+            pictures[2] = './img/background3.webp';
+            pictures[3] = './img/background4.webp';
+            pictures[4] = './img/background5.webp';
+            pictures[5] = './img/background6.webp';
+            pictures[6] = './img/background7.webp';
+            pictures[7] = './img/background8.webp';
+            pictures[8] = './img/background9.webp';
+            pictures[9] = './img/background10.webp';
             var rd = Math.floor(Math.random() * 10);
             $('#bg').attr('src', pictures[rd]) //随机默认壁纸
             break;
